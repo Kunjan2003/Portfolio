@@ -1,0 +1,53 @@
+{
+  "name": "kunjan-herma-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Kunjan Herma - Full Stack MERN Developer & UI/UX Designer",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "build": "echo 'Building portfolio...' && echo 'Portfolio built successfully!'",
+    "deploy": "gh-pages -d .",
+    "lint:css": "stylelint style.css",
+    "lint:html": "htmlhint index.html",
+    "optimize": "imagemin img/* --out-dir=img/optimized"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack-developer",
+    "mern-stack",
+    "ui-ux-designer",
+    "web-developer",
+    "javascript",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": {
+    "name": "Kunjan Herma",
+    "email": "kunjanherma2003@gmail.com",
+    "url": "https://github.com/Kunjan2003"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kunjan2003/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kunjan2003/portfolio/issues"
+  },
+  "homepage": "https://kunjan2003.github.io/portfolio",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "gh-pages": "^4.0.0",
+    "stylelint": "^15.0.0",
+    "htmlhint": "^1.1.4",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

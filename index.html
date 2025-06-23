@@ -4,8 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kunjan Herma - Full Stack Developer. Specializing in modern web applications with React, Node.js, and MongoDB.">
+  <meta name="keywords" content="Full Stack Developer, MERN Stack, React, Node.js, MongoDB, Web Developer, JavaScript">
+  <meta name="author" content="Kunjan Herma">
+  <meta property="og:title" content="Kunjan Herma - Full Stack Developer">
+  <meta property="og:description" content="Professional Full Stack MERN Developer creating modern web solutions">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css">
-  <title>My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+  <title>Kunjan Herma - Full Stack Developer</title>
 </head>
 
 <body>
@@ -15,7 +26,7 @@
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1><span>K</span>unjan <span>H</span>erma</h1>
+            <h1></h1>
           </a>
         </div>
         <div class="nav-list">
@@ -25,6 +36,7 @@
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#services" data-after="Service">Skills</a></li>
+            <li><a href="#experience" data-after="Experience">Experience</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
@@ -39,78 +51,131 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div>
+      <div class="hero-content">
         <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Kunjan<span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+        <h1>I'm <span></span></h1>
+        <h1>Kunjan Herma<span></span></h1>
+        <p class="hero-subtitle">Full Stack Developer</p>
+        <p class="hero-description">Crafting modern web experiences with cutting-edge technologies and user-centered design</p>
+        <div class="hero-buttons">
+          <a href="#projects" type="button" class="cta primary">View My Work</a>
+          <a href="#contact" type="button" class="cta secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
       </div>
     </div>
   </section>
   <!-- End Hero Section  -->
 
-  <!-- Service Section -->
+  <!-- Skills Section -->
   <section id="services">
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">Skil<span>l</span>s</h1>
-        <p>I am a B.E. IT student skilled in Full Stack and UI/UX Designing with a passion for designing user-friendly
-          interfaces and developing responsive websites. Skilled in both front-end development and back-end development,
-          with expertise in HTML, CSS, JavaScript, React, Node and design tools like Figma and Adobe XD. </p>
+        <h1 class="section-title">Technical <span>Skills</span></h1>
+        <p>As a passionate Full Stack Developer, I specialize in creating seamless digital experiences. 
+          My expertise spans across modern web technologies, from crafting intuitive user interfaces to building robust 
+          backend systems. I'm committed to delivering high-quality solutions that combine functionality with clean design.</p>
       </div>
       <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="./img/html.png" /></div>
-          <h2>HTML</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
+        <div class="service-item" data-skill="frontend">
+          <div class="icon"><img class="service-icon" src="./img/html.png" alt="HTML5" /></div>
+          <h2>HTML5</h2>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/css.jpeg" /></div>
-          <h2>CSS</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
+        <div class="service-item" data-skill="frontend">
+          <div class="icon"><img class="service-icon" src="./img/css.jpeg" alt="CSS3" /></div>
+          <h2>CSS3</h2>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/javascript.png" /></div>
+        <div class="service-item" data-skill="frontend">
+          <div class="icon"><img class="service-icon" src="./img/javascript.png" alt="JavaScript" /></div>
           <h2>JavaScript</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/react.png" /></div>
-          <h2>ReactJS</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
+        <div class="service-item" data-skill="frontend">
+          <div class="icon"><img class="service-icon" src="./img/react.png" alt="React" /></div>
+          <h2>React.js</h2>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/node.png" /></div>
-          <h2>NodeJs</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
+        <div class="service-item" data-skill="backend">
+          <div class="icon"><img class="service-icon" src="./img/node.png" alt="Node.js" /></div>
+          <h2>Node.js</h2>
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/mongo.png" /></div>
+        <div class="service-item" data-skill="database">
+          <div class="icon"><img class="service-icon" src="./img/mongo.png" alt="MongoDB" /></div>
           <h2>MongoDB</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/figma.png" /></div>
+        <div class="service-item" data-skill="design">
+          <div class="icon"><img class="service-icon" src="./img/figma.png" alt="Figma" /></div>
           <h2>Figma</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
         </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/adobe.png" /></div>
-          <h2>AdobeXD</h2>
-          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p> -->
+        <div class="service-item" data-skill="design">
+          <div class="icon"><img class="service-icon" src="./img/adobe.png" alt="Adobe XD" /></div>
+          <h2>Adobe XD</h2>
+        </div>
+        <div class="service-item" data-skill="backend">
+          <div class="icon"><img class="service-icon" src="./img/python logo.svg" alt="Python" /></div>
+          <h2>Python</h2>
+        </div>
+        <div class="service-item" data-skill="frontend">
+          <div class="icon"><img class="service-icon" src="./img/vuejs logo.png" alt="Vue.js" /></div>
+          <h2>Vue.js</h2>
+        </div>
+        <div class="service-item" data-skill="database">
+          <div class="icon"><img class="service-icon" src="./img/postgres logo.png" alt="PostgreSQL" /></div>
+          <h2>PostgreSQL</h2>
+        </div>
+        <div class="service-item" data-skill="backend">
+          <div class="icon"><img class="service-icon" src="./img/fastapi logo.png" alt="FastAPI" /></div>
+          <h2>FastAPI</h2>
         </div>
       </div>
     </div>
   </section>
   <!-- End Service Section -->
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="experience container">
+      <div class="experience-header">
+        <h1 class="section-title">Professional <span>Experience</span></h1>
+        <p>My journey in the tech industry, where I've applied my skills in real-world projects and contributed to innovative solutions.</p>
+      </div>
+      <div class="experience-content">
+        <div class="experience-item">
+          <div class="experience-timeline">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="experience-details">
+            <div class="experience-header-info">
+              <h2>Full Stack Development Intern</h2>
+              <h3>Improwised Technologies PVT LTD.</h3>
+              <span class="experience-duration">6 Months</span>
+            </div>
+            <div class="experience-description">
+              <ul class="experience-achievements">
+                <li>Contributed to HERBIT as a Full Stack Development Intern, enhancing an AI-powered quiz platform for automated quiz creation and evaluation</li>
+                <li>Built a dynamic full-stack application using FastAPI for the backend and Vue.js with Tailwind CSS for the frontend</li>
+                <li>Implemented AI-based question generation and robust result tracking, boosting user engagement by 30%</li>
+                <li>Integrated PostgreSQL for secure, efficient data management and added Swagger API docs with backend testing for system reliability</li>
+              </ul>
+            </div>
+            <div class="experience-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Tailwind CSS</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">AI Integration</span>
+              <span class="tech-tag">Swagger API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Experience Section -->
 
   <!-- Projects Section -->
   <section id="projects">
@@ -121,67 +186,81 @@
       <div class="all-projects">
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Blogiverse</h2>
-            <p>• Developed "Blogiverse" a dynamic blog platform using Node.js, MongoDB, and EJS. Key features include
-              user, authentication, adding and deleting blog posts, and commenting functionality. </p>
-            <p>• Tech: Node.js, Express.js, MongoDB</p>
+            <h1>Featured Project</h1>
+            <h2>Blogiverse - Dynamic Blog Platform</h2>
+            <p>A comprehensive blog platform featuring user authentication, dynamic content management, and interactive commenting system. Built with modern web technologies to provide seamless user experience.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">EJS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kunjan2003/Blogiverse-main" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+            </div>
           </div>
           <div class="project-img">
-            <img src="./img/blog.png" alt="img">
+            <img src="./img/blog.png" alt="Blogiverse Blog Platform">
           </div>
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Bat Blitz - Admin Panel</h2>
-            <p>• Developed a admin Panel that contains dynamic bats listing page facilitating bat management tasks such
-              as type, editing, and deletion, along with detailed bat view options. also Implemented category
-              management functionality, enabling type, editing, and deletion of categories.</p>
-            <p>• Tech: Angular.js, JavaScript, CSS, HTML</p>
+            <h1>Web Application</h1>
+            <h2>Bat Blitz - Admin Dashboard</h2>
+            <p>A sophisticated admin panel with dynamic data management capabilities. Features comprehensive CRUD operations, category management, and intuitive user interface for efficient content administration.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Angular.js</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">HTML5</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kunjan2003/Bat-Blitz---Admin-panel--main" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+            </div>
           </div>
           <div class="project-img">
-            <img src="./img/bat.png" alt="img">
+            <img src="./img/bat.png" alt="Bat Blitz Admin Panel">
           </div>
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Country Information </h2>
-            <p>• Designed and implemented a web Page using AngularJS that utilizes a country web API to fetch and display
-              relevantcountry data, providing users with dynamic and informative content about various countries around
-              the world</p>
-              <p>• Tech: Angular.js, JavaScript, CSS, HTML</p>
+            <h1>API Integration</h1>
+            <h2>Global Country Explorer</h2>
+            <p>An interactive web application that leverages REST APIs to provide comprehensive country information. Features dynamic data visualization and responsive design for optimal user experience across devices.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">Angular.js</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Kunjan2003/country-information-web" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+            </div>
           </div>
           <div class="project-img">
-            <img src="./img/country.png" alt="img">
+            <img src="./img/country.png" alt="Country Information App">
           </div>
         </div>
         <div class="project-item">
           <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>IPDO-by-WitchCraft</h2>
-            <p>• Our IP Information Service allows you to gather detailed insights on IP addresses, including basic 
-              information, geolocation, cloud provider details, open ports, and passive vulnerabilities. We leverage the 
-              Shodan API to provide robust data for each query. </p>
-                <p>• Tech: Node.js, Express.js, MongoDB, React.js</p>
+            <h1>Full Stack Project</h1>
+            <h2>IPDO - IP Intelligence Platform</h2>
+            <p>A comprehensive IP information service providing detailed insights including geolocation, security analysis, and network details. Integrates with Shodan API for advanced threat intelligence and vulnerability assessment.</p>
+            <div class="tech-stack">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Shodan API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/c00ldy/IPDO_by_WitchCraft" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+            </div>
           </div>
           <div class="project-img">
-            <img src="./img/ipdo.png" alt="img">
+            <img src="./img/ipdo.png" alt="IPDO IP Intelligence Platform">
           </div>
         </div>
-        <!-- <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -197,11 +276,30 @@
       </div>
       <div class="col-right">
         <h1 class="section-title">About <span>me</span></h1>
-        <h2>MERN Stack Developer</h2>
-        <p>I’m a passionate MERN Stack Developer skilled in MongoDB, Express.js, React.js, and Node.js.
+        <h2>Full Stack Developer</h2>
+        <p>I’m a passionate Full Stack Developer skilled in MongoDB, Express.js, React.js, and Node.js.
           My expertise lies in developing scalable web solutions while creating intuitive user interfaces.
           Tools like Adobe XD, Figma, and Canva complement my development process.</p>
-        <a href="Main resume.pdf" download Class="cta">Download Resume</a>
+        <p>My journey in web development started with a curiosity for how things work behind the scenes. 
+          Today, I create end-to-end solutions that not only function flawlessly but also provide intuitive 
+          user experiences. I believe in writing clean, maintainable code and designing with the user in mind.</p>
+
+        <div class="education-info">
+          <h3>Education</h3>
+          <div class="education-item">
+            <h4>B.E Information Technology</h4>
+            <p>Marwadi University</p>
+          </div>
+        </div>
+
+        <div class="about-buttons">
+          <a href="Main resume.pdf" download class="cta primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="cta secondary">
+            <i class="fas fa-envelope"></i> Let's Talk
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -218,7 +316,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
           <div class="contact-info">
             <h1>Phone</h1>
-            <h2>+91 9558962825</h2>
+            <h2>9558962825</h2>
 
           </div>
         </div>
@@ -226,7 +324,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
           <div class="contact-info">
             <h1>Email</h1>
-            <h2>kunjanherma2003@gmail.com</h2>
+            <h2>kunjanherma@gmail.com</h2>
 
           </div>
         </div>
@@ -234,7 +332,7 @@
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
           <div class="contact-info">
             <h1>Address</h1>
-            <h2>Junagadh, Gujarat</h2>
+            <h2>Rajkot, Gujarat</h2>
           </div>
         </div>
       </div>
@@ -248,22 +346,36 @@
       <div class="brand">
         <h1><span>K</span>unjan <span>H</span>erma</h1>
       </div>
-      <h2>Your Complete Web Solution</h2>
       <div class="social-icon">
         <div class="social-item">
-          <a href="http://www.linkedin.com/in/kunjanherma44"><img src="./img/linkdin.png" /></a>
+          <a href="http://www.linkedin.com/in/kunjanherma44" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </div>
         <div class="social-item">
-          <a href="https://github.com/Kunjan2003"><img src="./img/git.png" /></a>
-        </div>
-        <!-- <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          <a href="https://github.com/Kunjan2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
-        </div> -->
+          <a href="mailto:kunjanherma@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="tel:9558962825" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
       </div>
-      <p>Copyright © 2024 Kunjan. All rights reserved</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#services">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">Copyright © 2024 Kunjan Herma. All rights reserved</p>
     </div>
   </section>
   <!-- End Footer -->
